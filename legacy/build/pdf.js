@@ -12777,9 +12777,6 @@ var WorkerTransport = /*#__PURE__*/function () {
         var reason;
 
         switch (ex.name) {
-          case "PasswordException":
-            reason = new _util.PasswordException(ex.message, ex.code);
-            break;
 
           case "InvalidPDFException":
             reason = new _util.InvalidPDFException(ex.message);
@@ -18098,9 +18095,6 @@ function wrapReason(reason) {
 
     case "MissingPDFException":
       return new _util.MissingPDFException(reason.message);
-
-    case "PasswordException":
-      return new _util.PasswordException(reason.message, reason.code);
 
     case "UnexpectedResponseException":
       return new _util.UnexpectedResponseException(reason.message, reason.status);
