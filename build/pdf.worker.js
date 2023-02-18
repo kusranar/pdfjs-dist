@@ -74710,9 +74710,6 @@ function wrapReason(reason) {
     case "MissingPDFException":
       return new _util.MissingPDFException(reason.message);
 
-    case "PasswordException":
-      return new _util.PasswordException(reason.message, reason.code);
-
     case "UnexpectedResponseException":
       return new _util.UnexpectedResponseException(reason.message, reason.status);
 
